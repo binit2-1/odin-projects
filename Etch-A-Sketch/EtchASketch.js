@@ -2,6 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const container=document.querySelector(".container");
     const resize=document.getElementById("Resize");
 
+    function randomColor() {
+        const r= Math.floor(Math.random() * 256);
+        const g= Math.floor(Math.random() * 256);
+        const b= Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+
+
     function createGrid(size){
         container.innerHTML = "";
         // squareSize=960/size;
@@ -12,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             square.style.height= (100/size) + '%';
             
             square.addEventListener("mouseenter",() =>{
-                square.style.backgroundColor = "white";
+                square.style.backgroundColor = randomColor();
             });
             
             container.appendChild(square);
