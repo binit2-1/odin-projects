@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
+
+@font-face{
+    font-family: 'Digital';
+    src:url('./assets/Digital7Italic-BW658.ttf') format('truetype');
+}
+
 body{
     background-color: #000000;
     font-family: Arial, sans-serif;
@@ -34,7 +40,10 @@ h1{
 }
 
 .display{
+    font-family:'Digital', sans-serif;
     background-color: #101010;
+    font-size: 90px;
+    letter-spacing: 10px;
     padding: 10px;
     height: 100px;
     width: 380px;
@@ -55,7 +64,33 @@ h1{
     
 }
 
-.btneq{
+.btn.btnd{
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    height:80px;
+    width: 80px;
+    border: none;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+.btn.btnc{
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    height:80px;
+    width: 80px;
+    border: none;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+.btn.btneq{
     background-color: #f38600;
     color: #FFFFFF;
     height:80px;
