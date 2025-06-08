@@ -16,6 +16,10 @@ This repository contains multiple web projects created as part of the Odin Proje
   
   A landing page inspired by the One Piece anime, featuring character info and a call to adventure.
 
+- [Calculator (Live Demo)](https://binit2-1.github.io/odin-projects/calculator/) | [Source Code](./calculator/)
+  
+  A simple, stylish calculator web app. Supports basic arithmetic operations, percentage, clear, and delete. Built with HTML, CSS, and JavaScript.
+
 ---
 
 Each project has its own README and source files inside its respective folder. Explore the folders for more details and source code.
