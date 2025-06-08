@@ -104,3 +104,16 @@ h1{
     border-radius: 5px;
     min-height: 0;
 }
+
+.btn.btnp{
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    height:80px;
+    width: 80px;
+    border: none;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
