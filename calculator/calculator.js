@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
             else if(button.classList.contains("btnd")){
                 display.textContent = display.textContent.slice(0, -1)
             }
+            else if(button.classList.contains("btneq")){
+                const exp = display.textContent.replace(/x/g, "*")
+                display.textContent = eval (exp);
+            }
             else{
                 displayValue(button.textContent);
             }
