@@ -9,27 +9,34 @@ This repository contains multiple web projects created as part of the Odin Proje
 3. **Open the `index.html` file** in your browser to view the project.
 4. **Check the README in each folder** for project-specific details, features, and credits.
 
-## Projects
+## Projects Gallery
 
-- [Etch-A-Sketch (Live Demo)](https://binit2-1.github.io/odin-projects/Etch-A-Sketch/) | [Source Code](./Etch-A-Sketch/)
-  
-  A browser-based Etch-A-Sketch drawing app. Change the grid size and draw by hovering over the squares.
-
-- [Rock Paper Scissors (Live Demo)](https://binit2-1.github.io/odin-projects/RPS/) | [Source Code](./RPS/)
-  
-  Play Rock Paper Scissors against the computer with a fun UI and score tracking.
-
-- [One Piece Landing Page (Live Demo)](https://binit2-1.github.io/odin-projects/OnePiece-LandingPage/) | [Source Code](./OnePiece-LandingPage/)
-  
-  A landing page inspired by the One Piece anime, featuring character info and a call to adventure.
-
-- [Calculator (Live Demo)](https://binit2-1.github.io/odin-projects/calculator/) | [Source Code](./calculator/)
-  
-  A simple, stylish calculator web app. Supports basic arithmetic operations, percentage, clear, and delete. Built with HTML, CSS, and JavaScript.
-
-- [Form Project (Live Demo)](https://binit2-1.github.io/odin-projects/form/) | [Source Code](./form/)
-  
-  A visually appealing form page with a centered Odin logo overlay, scenic background, and photo credits. See the folder README for details.
+<p align="center">
+  <a href="https://binit2-1.github.io/odin-projects/Etch-A-Sketch/" target="_blank">
+    <img src="Etch-A-Sketch/assets/zombieCat.ttf" width="60" height="60" alt="Etch-A-Sketch" />
+    <br><b>Etch-A-Sketch</b>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://binit2-1.github.io/odin-projects/RPS/" target="_blank">
+    <img src="RPS/imgs/rock.png" width="60" height="60" alt="Rock Paper Scissors" />
+    <br><b>Rock Paper Scissors</b>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://binit2-1.github.io/odin-projects/OnePiece-LandingPage/" target="_blank">
+    <img src="OnePiece-LandingPage/assets/One-Piece-Logo.png" width="60" height="60" alt="One Piece Landing Page" />
+    <br><b>One Piece Landing Page</b>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://binit2-1.github.io/odin-projects/calculator/" target="_blank">
+    <img src="calculator/assets/Digital7Italic-BW658.ttf" width="60" height="60" alt="Calculator" />
+    <br><b>Calculator</b>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://binit2-1.github.io/odin-projects/form/" target="_blank">
+    <img src="form/assets/img/odin-lined.png" width="60" height="60" alt="Form Project" />
+    <br><b>Form Project</b>
+  </a>
+</p>
 
 ---
 
