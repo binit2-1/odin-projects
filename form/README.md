@@ -1,0 +1,40 @@
+# Odin Form Project
+
+A visually appealing form page inspired by The Odin Project, featuring a centered logo overlay, a scenic background image, and proper photo credits.
+
+## Live Demo
+
+<!-- Add your live demo link here if available -->
+
+## Features
+
+- **Centered Logo Overlay:** Odin logo and text are perfectly centered over a scenic background image.
+- **Scenic Background:** Uses a high-quality Unsplash image for visual appeal.
+- **Photo Credits:** Credits for the background image are displayed at the bottom of the page.
+- **Responsive Layout:** Designed to look good on most desktop screens.
+- **Custom Fonts:** Uses the Norse font for the logo and Poppins for credits.
+
+## How to Use
+
+1. Clone or download this repository.
+2. Open `form/index.html` in your browser.
+3. The logo and text will appear centered over the background image, with credits at the bottom.
+
+## Project Structure
+
+- `index.html` – Main HTML file for the form page.
+- `styles.css` – Main stylesheet for layout and overlay effects.
+- `fonts.css` – Font imports and custom font-face declarations.
+- `reset.css` – CSS reset for consistent styling.
+- `assets/img/` – Contains the background image (`leaves.jpg`) and logo (`odin-lined.png`).
+- `assets/fonts/` – Contains the Norse font used for the logo text.
+
+## Credits
+
+- Logo and design inspired by [The Odin Project](https://www.theodinproject.com/).
+- Background photo by [Halie West](https://unsplash.com/@haliewest) on [Unsplash](https://unsplash.com/).
+- Norse font by [Nedum Studios](https://www.dafont.com/norse.font).
+
+## License
+
+This project is open source and free to use for educational purposes.
