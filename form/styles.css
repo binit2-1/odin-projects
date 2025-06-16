@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "poppins";
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+}
+.left{
+    position: relative;
+    height: 100vh;
+    width: 807.5px;
+
+}
+.credits{
+    font-family: "poppins", sans-serif;
+    position: absolute;
+    width: 100%;
+    color: aliceblue;
+    bottom: 20px;
+    text-align: center;
+}
+a{
+    font-style: italic;
+    color:aliceblue;
+    text-decoration:underline;
+}
