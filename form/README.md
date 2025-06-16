@@ -1,10 +1,8 @@
 # Odin Form Project
 
+[Live Demo](https://binit2-1.github.io/odin-projects/form/)
+
 A visually appealing form page inspired by The Odin Project, featuring a centered logo overlay, a scenic background image, and proper photo credits.
-
-## Live Demo
-
-<!-- Add your live demo link here if available -->
 
 ## Features
 
@@ -16,9 +14,8 @@ A visually appealing form page inspired by The Odin Project, featuring a centere
 
 ## How to Use
 
-1. Clone or download this repository.
-2. Open `form/index.html` in your browser.
-3. The logo and text will appear centered over the background image, with credits at the bottom.
+1. Open the [Live Demo](https://binit2-1.github.io/odin-projects/form/) in your browser.
+2. The logo and text will appear centered over the background image, with credits at the bottom.
 
 ## Project Structure
 

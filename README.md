@@ -27,7 +27,7 @@ This repository contains multiple web projects created as part of the Odin Proje
   
   A simple, stylish calculator web app. Supports basic arithmetic operations, percentage, clear, and delete. Built with HTML, CSS, and JavaScript.
 
-- [Form Project (Source Code)](./form/)
+- [Form Project (Live Demo)](https://binit2-1.github.io/odin-projects/form/) | [Source Code](./form/)
   
   A visually appealing form page with a centered Odin logo overlay, scenic background, and photo credits. See the folder README for details.
 
