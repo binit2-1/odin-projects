@@ -143,8 +143,46 @@ h1{
 strong{
     color: #596D48;
 }
+
 strong:hover{
     color: #596D48;
     text-decoration: underline;
     cursor:pointer;
+}
+
+.form{
+    position: absolute;
+    font-family: "poppins", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    left: 5%;
+    top: 25%;
+    width: 90%;
+    
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 5px;
+    width: 400px;
+    height: 35px;
+    border:grey 2px solid;
+}
+
+input:focus{
+    outline: none;
+    border-color: #596D48;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown){
+    border-color: red;
+}
+
+input:valid{
+    border-color: grey;
 }
