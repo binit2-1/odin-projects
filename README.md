@@ -5,11 +5,15 @@ This repository contains multiple web projects created as part of the Odin Proje
 ## How to Explore the Projects (Step by Step)
 
 1. **Clone or download this repository.**
-2. **Open any project folder** (e.g., `Etch-A-Sketch`, `RPS`, `OnePiece-LandingPage`, `calculator`, `form`).
+2. **Open any project folder** (e.g., `dashboard`, `Etch-A-Sketch`, `RPS`, `OnePiece-LandingPage`, `calculator`, `form`).
 3. **Open the `index.html` file** in your browser to view the project.
 4. **Check the README in each folder** for project-specific details, features, and credits.
 
 ## Projects
+
+- [Admin Dashboard (Live Demo)](https://binit2-1.github.io/odin-projects/dashboard/) | [Source Code](./dashboard/)
+  
+  A modern, responsive admin dashboard built with advanced CSS Grid layout. Features sidebar navigation, project cards, announcements, and trending sections with professional styling.
 
 - [Etch-A-Sketch (Live Demo)](https://binit2-1.github.io/odin-projects/Etch-A-Sketch/) | [Source Code](./Etch-A-Sketch/)
   
