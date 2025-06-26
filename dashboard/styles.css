@@ -1,4 +1,5 @@
 .container{
+    font-family: "roboto", sans-serif;
     width: 100vw;
     height: 100vh;
     display:grid;
@@ -12,12 +13,13 @@
 }
 
 .header{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     grid-row: 1/2;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
 .header .top{
@@ -34,6 +36,7 @@
     padding-left: 30px;
     gap:30px;
     align-items: center;
+    
 }
 
 .header .top .search input{
@@ -50,9 +53,18 @@
     flex-direction: row;
     justify-content: flex-end;
     gap: 30px;
-    padding-right: 70px;
+    padding-right: 100px;
     align-items: center;
-    
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.user p{
+    margin-top:8px;
+}
+
+.header .top .user .profile-icon{
+    border-radius: 50%;
 }
 
 .header .bottom{
@@ -72,6 +84,15 @@
     gap: 30px;
 }
 
+.header .bottom .left .profile-icon{
+    border-radius: 50%;
+}
+
+.header .bottom .left p span{
+    font-size: 35px;
+    font-weight: 600;
+}
+
 .header .bottom .right{
     display: flex;
     flex-direction: row;
@@ -83,6 +104,7 @@
 
 .header .bottom .right button{
     background-color: #1992D4;
+    font-size:larger;
     color: white;
     width: 150px;
     height: auto;
@@ -91,3 +113,4 @@
     border: none;
     cursor: pointer;
 }
+
