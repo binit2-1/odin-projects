@@ -1,33 +1,115 @@
-# Calculator
+# 🧮 Calculator
 
-[Live Demo](https://binit2-1.github.io/odin-projects/calculator/)
+**🔗 [Live Demo](https://binit2-1.github.io/odin-projects/calculator/)**
 
-## Overview
+A fully functional calculator web application with a retro digital display design. Built with vanilla HTML, CSS, and JavaScript as part of The Odin Project curriculum.
 
-Calculator is a simple, stylish web app that performs basic arithmetic operations. Built with HTML, CSS, and JavaScript, it features a digital-style display and a responsive, modern interface. This project is part of the Odin Project curriculum and demonstrates DOM manipulation, event handling, and custom styling.
+## ✨ Features
 
-## Features
+- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division
+- **Percentage Calculation**: Built-in percentage function using the % button
+- **Clear & Delete Functions**: AC button clears display, DEL removes last character
+- **Digital Display**: Custom digital font for authentic calculator appearance
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Error Handling**: Prevents invalid operations and displays appropriate messages
+- **Keyboard-Free Operation**: All input via intuitive on-screen buttons
 
-- **Basic Arithmetic:** Supports addition, subtraction, multiplication, and division.
-- **Percentage Calculation:** Easily calculate percentages using the % button.
-- **Clear & Delete:** AC button clears the display, DEL removes the last character.
-- **Responsive Design:** Works well on both desktop and mobile browsers.
-- **Digital Display:** Uses a custom digital font for a classic calculator look.
-- **Keyboard-Free Operation:** All input is via on-screen buttons for a tactile experience.
+## 🚀 Demo
 
-## How to Use
+Try the calculator live: [Calculator Demo](https://binit2-1.github.io/odin-projects/calculator/)
 
-1. **Open the [Live Demo](https://binit2-1.github.io/odin-projects/calculator/)** in your browser.
-2. Click the on-screen buttons to enter numbers and operations.
-3. Use AC to clear, DEL to delete the last entry, and % for percentage calculations.
-4. Press = to evaluate the expression and see the result.
+## 🛠️ Technologies Used
 
-## Project Structure
+- **HTML5**: Semantic structure and accessibility
+- **CSS3**: Modern styling with custom fonts and responsive design
+- **JavaScript ES6**: Event handling, DOM manipulation, and calculation logic
+- **Custom Fonts**: Digital7Italic font for authentic calculator display
 
-- `index.html` – Main HTML file containing the calculator structure.
-- `styles.css` – CSS for layout, colors, and digital display styling.
-- `calculator.js` – JavaScript for calculator logic, event handling, and UI updates.
-- `assets/` – Contains the custom digital font (`Digital7Italic-BW658.ttf`).
+## 📋 How to Use
+
+1. **Visit the live demo** or open `index.html` in your browser
+2. **Enter numbers** by clicking the digit buttons (0-9)
+3. **Select operations** using +, -, ×, ÷ buttons
+4. **Calculate results** by pressing the = button
+5. **Clear display** with AC or delete last entry with DEL
+6. **Use percentage** with the % button for quick calculations
+
+## 🏗️ Project Structure
+
+```
+calculator/
+├── index.html              # Main HTML structure
+├── styles.css              # CSS styling and layout
+├── calculator.js           # JavaScript logic and event handling
+├── README.md              # Project documentation
+└── assets/
+    └── Digital7Italic-BW658.ttf  # Custom digital font
+```
+
+## 🎯 Key Learning Concepts
+
+This project demonstrates:
+
+- **Event Handling**: Managing user interactions with buttons
+- **DOM Manipulation**: Updating display and managing calculator state
+- **JavaScript Logic**: Implementing arithmetic operations and error handling
+- **CSS Styling**: Creating a polished, professional interface
+- **Responsive Design**: Ensuring functionality across different screen sizes
+
+## 💡 Technical Highlights
+
+### Calculator Logic
+```javascript
+// Example of operation handling
+function operate(operator, a, b) {
+    switch(operator) {
+        case '+': return a + b;
+        case '-': return a - b;
+        case '×': return a * b;
+        case '÷': return b !== 0 ? a / b : 'Error';
+        default: return null;
+    }
+}
+```
+
+### Features
+- **Chained Operations**: Perform multiple operations in sequence
+- **Decimal Support**: Handle floating-point arithmetic
+- **Error Prevention**: Validate inputs and prevent invalid operations
+- **Visual Feedback**: Button press animations and hover effects
+
+## 🔮 Future Enhancements
+
+- [ ] Scientific calculator functions (sin, cos, tan, etc.)
+- [ ] Memory functions (M+, M-, MC, MR)
+- [ ] Keyboard input support
+- [ ] History of calculations
+- [ ] Different themes/color schemes
+- [ ] Sound effects for button presses
+
+## 🚀 Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/odin-projects.git
+   cd odin-projects/calculator
+   ```
+
+2. **Open in browser**:
+   - Simply open `index.html` in your web browser
+   - No build process or dependencies required
+
+3. **Start calculating**!
+
+## 📚 Acknowledgments
+
+- [The Odin Project](https://www.theodinproject.com/) for the excellent curriculum
+- Digital7 font family for the authentic calculator display
+- Modern calculator designs for UI inspiration
+
+---
+
+*Built with ❤️ as part of The Odin Project curriculum*
 
 ## Customization
 
