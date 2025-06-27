@@ -171,3 +171,11 @@ dialog input[type="checkbox"] {
     align-items: center;
 }
 
+.book-item button{
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+

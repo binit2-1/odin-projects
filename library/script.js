@@ -18,6 +18,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="remove-book" data-index="${index}">Remove</button>
                 <button class="read-toggle" data-index="${index}">${book.read ? 'Mark as Unread' : 'Mark as Read'}</button>
             `;
+            const toggleBtn=bookItem.querySelector('.read-toggle');
+
+            if (book.read){
+                toggleBtn.style.backgroundColor = '#95ff64';
+            }
+            else{
+                toggleBtn.style.backgroundColor = '#ff474c';
+            }
+            toggleBtn.addEventListener('mouseenter',()=>{
+                if (book.read){
+                    toggleBtn.style.backgroundColor = '#85e05c';
+                }
+                else{
+                    toggleBtn.style.backgroundColor = '#ba3236';
+                }
+            })
+            toggleBtn.addEventListener('mouseleave',()=>{
+                if (book.read){
+                    toggleBtn.style.backgroundColor = '#95ff64';
+                }
+                else{
+                    toggleBtn.style.backgroundColor = '#ff474c';
+                }
+            })
+
             bookList.appendChild(bookItem);
         });
     }
