@@ -16,6 +16,17 @@
         </div>
         <div class="content">
             <button class="add-book">+ Add Book</button>
+            <dialog closedby="any">
+                <h2>Add a Book</h2>
+                <form method="dialog">
+                    <input type="text" id="title" placeholder="Title" required>
+                    <input type="text" id="author" placeholder="Author" required>
+                    <input type="number" id="pages" placeholder="Pages" required>
+                    <input type="checkbox" id="read">
+                        <label for="read">I have read</label>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </dialog>
         </div>
     </div>
 </body>
