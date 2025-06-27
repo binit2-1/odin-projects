@@ -75,3 +75,34 @@
 .content .add-book:hover{
     background-color: #d0d0d0;
 }
+
+dialog{
+    width: 350px;
+    height: 400px;
+    margin: auto;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(1px);
+}
+
+dialog h2{
+    display: flex;
+    justify-content: center;
+}
+
+dialog form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

@@ -16,18 +16,21 @@
         </div>
         <div class="content">
             <button class="add-book">+ Add Book</button>
-            <dialog closedby="any">
+            <dialog closeby="any">
                 <h2>Add a Book</h2>
                 <form method="dialog">
                     <input type="text" id="title" placeholder="Title" required>
                     <input type="text" id="author" placeholder="Author" required>
                     <input type="number" id="pages" placeholder="Pages" required>
-                    <input type="checkbox" id="read">
-                        <label for="read">I have read</label>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="read">
+                        <label for="read">I have read it</label>
+                    </div>
                     <button type="submit" class="submit">Submit</button>
                 </form>
             </dialog>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
