@@ -77,9 +77,11 @@
 }
 
 dialog{
-    width: 350px;
+    width: 300px;
     height: 400px;
     margin: auto;
+    border: none;
+    border-radius: 10px;
 }
 
 dialog::backdrop {
@@ -94,15 +96,54 @@ dialog h2{
 dialog form{
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 25px;
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
 
+dialog input[type="text"],
+dialog input[type="number"]{
+    border: none;
+    background-color: #e2e2e2;
+    width:270px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+dialog input[type="text"]:focus,
+dialog input[type="number"]:focus {
+    outline: none;
 }
 
 .checkbox-container {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: -8px auto -8px auto;
+}
+
+dialog input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #95ff64;
+}
+
+.submit{
+    width: 270px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #95ff64;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.submit:hover{
+    background-color: #85e05c;
 }
