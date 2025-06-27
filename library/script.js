@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     toggleBtn.style.backgroundColor = '#85e05c';
                 }
                 else{
-                    toggleBtn.style.backgroundColor = '#ba3236';
+                    toggleBtn.style.backgroundColor = '#d1363b';
                 }
             })
             toggleBtn.addEventListener('mouseleave',()=>{
@@ -44,9 +44,20 @@ document.addEventListener('DOMContentLoaded', () => {
             })
 
             bookList.appendChild(bookItem);
+
+            const removeBtn = bookItem.querySelector('.remove-book');
+            removeBtn.addEventListener('click', () => {
+                library.splice(index, 1);
+                displayBooks();
+            });
+
+            const readToggleBtn = bookItem.querySelector('.read-toggle');
+            readToggleBtn.addEventListener('click', () => {
+                book.read = !book.read;
+                displayBooks();
+            });
         });
     }
-    
     
 
     function Book(){
