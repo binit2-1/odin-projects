@@ -38,6 +38,7 @@ An interactive drawing board inspired by the classic Etch-A-Sketch toy. Users ca
 ---
 
 ### 📚 [Personal Library Manager](./library/)
+**🔗 [Live Demo](https://binit2-1.github.io/odin-projects/library/)**  
 **Technologies**: HTML5, CSS3, JavaScript ES6, Dialog API
 
 A comprehensive book collection manager with CRUD operations and modern UI design using dialog elements.
