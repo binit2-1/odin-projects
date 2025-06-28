@@ -1,0 +1,46 @@
+.container{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    font-family:"poppins", sans-serif;
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.game-container > div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cell-top-left,
+.cell-top-mid,
+.cell-top-right,
+.cell-mid-left,
+.cell-mid-mid,
+.cell-mid-right{
+    border-bottom: 2px solid black;
+}
+
+.cell-top-left,
+.cell-mid-left,
+.cell-bottom-left,
+.cell-top-mid,
+.cell-mid-mid,
+.cell-bottom-mid{
+    border-right: 2px solid black;
+}
