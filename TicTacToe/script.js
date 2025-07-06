@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let winningCombinations = [
             [0, 1, 2], [3, 4, 5],
             [6, 7, 8], [0, 3, 6],
-            [1, 4, 7], [2, 5, 8],   
+            [1, 4, 7], [2, 5, 8],
             [0, 4, 8], [2, 4, 6]
         ];
-        
+
         function HandleClicks() {
             let p1 = 'X';
             let p2 = 'O';
@@ -54,16 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             });
-
         }
         HandleClicks();
 
         function checkWinner() {
-            let winner=' ';
+            let winner = ' ';
             for (let i of winningCombinations) {
-                if (board[i[0]] === '' || board[i[1]] === '' || board[i[2]] === '') {
-                    continue; 
-                } else if (board[i[0]] === board[i[1]] && board[i[1]] === board[i[2]]) {
+                if (
+                    board[i[0]] === '' ||
+                    board[i[1]] === '' ||
+                    board[i[2]] === ''
+                ) {
+                    continue;
+                } else if (
+                    board[i[0]] === board[i[1]] &&
+                    board[i[1]] === board[i[2]]
+                ) {
                     console.log(`Winner: ${board[i[0]]}`);
                     winner = (board[i[0]] == 'X') ? 'YOU win' : 'OPPONENT wins';
                     const gameOverMessage = document.getElementById('game-over-message');
@@ -73,11 +79,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     gameOverDialog.addEventListener('cancel', (event) => {
                         event.preventDefault();
                     });
+                    gameOverDialog.addEventListener('click', (e) => {
+                        if (e.target.classList.contains('restart-game')) {
+                            const cells = document.querySelectorAll('.game-container div');
+                            cells.forEach(cell => {
+                                cell.textContent = '';
+                            });
+                            board = ['', '', '', '', '', '', '', '', ''];
+                            cells.forEach(cell => {
+                                cell.textContent = '';
+                            });
+                            gameOver = false;
+                            currentPlayer = 'X';
+                            dialog.showModal();
+                            console.log('Game restarted');
+                        }
+                    });
                     return true;
                 }
             }
             return false;
         }
-
     }
 });
