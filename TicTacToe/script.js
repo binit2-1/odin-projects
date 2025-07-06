@@ -25,32 +25,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function Gameboard() {
         let board = ['', '', '', '', '', '', '', '', ''];
-        const winningCombinations = [
-            [0, 1, 2], [3, 4, 5], [6, 7, 8], // Horizontal
-            [0, 3, 6], [1, 4, 7], [2, 5, 8], // Vertical
-            [0, 4, 8], [2, 4, 6] // Diagonal
+        let winningCombinations = [
+            [0, 1, 2], [3, 4, 5],
+            [6, 7, 8], [0, 3, 6],
+            [1, 4, 7], [2, 5, 8],   
+            [0, 4, 8], [2, 4, 6]
         ];
-
+        
         function HandleClicks() {
             let p1 = 'X';
             let p2 = 'O';
             let currentPlayer = p1;
-            let gameOver = false;
+            let gameOver = checkWinner();
             const cells = document.querySelectorAll('.game-container div');
             cells.forEach(cell => {
                 cell.addEventListener('click', (e) => {
                     const index = e.target.dataset.index;
                     console.log(`Cell clicked: ${index}`);
-                    if (board[index] === '' && gameOver == false) {
+                    if (board[index] === '' && !gameOver) {
                         board[index] = currentPlayer;
                         e.target.textContent = currentPlayer;
-                        currentPlayer = currentPlayer === p1 ? p2 : p1;
-                        console.log(`Current player: ${currentPlayer}`);
+                        if (checkWinner()) {
+                            gameOver = true;
+                        } else {
+                            currentPlayer = currentPlayer === p1 ? p2 : p1;
+                            console.log(`Current player: ${currentPlayer}`);
+                        }
                     }
                 });
             });
 
         }
         HandleClicks();
+
+        function checkWinner() {
+            for (let i of winningCombinations) {
+                if (board[i[0]] === '' || board[i[1]] === '' || board[i[2]] === '') {
+                    continue; 
+                } else if (board[i[0]] === board[i[1]] && board[i[1]] === board[i[2]]) {
+                    console.log(`Winner: ${board[i[0]]}`);
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 });
