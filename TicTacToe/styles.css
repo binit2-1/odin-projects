@@ -11,6 +11,15 @@
     padding-top: 40px;
 }
 
+.vsHuman, .vsComputer{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+}
+
 .game-container{
     display: grid;
     grid-template-columns: 100px 100px 100px;
