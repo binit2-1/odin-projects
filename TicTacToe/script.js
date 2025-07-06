@@ -68,7 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     winner = (board[i[0]] == 'X') ? 'YOU win' : 'OPPONENT wins';
                     const gameOverMessage = document.getElementById('game-over-message');
                     gameOverMessage.textContent = ` ${winner} `;
-                    document.getElementById('game-over-dialog').showModal();
+                    const gameOverDialog = document.getElementById('game-over-dialog');
+                    gameOverDialog.showModal();
+                    gameOverDialog.addEventListener('cancel', (event) => {
+                        event.preventDefault();
+                    });
                     return true;
                 }
             }
