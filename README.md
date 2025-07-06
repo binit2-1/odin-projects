@@ -111,6 +111,22 @@ A complete admin dashboard interface demonstrating advanced CSS Grid techniques 
 - Responsive design patterns for mobile compatibility
 - Profile integration with announcements and trending sections
 
+---
+
+### ❌ [Tic Tac Toe](./TicTacToe/)
+**🔗 [Live Demo](https://binit2-1.github.io/odin-projects/TicTacToe/)**  
+**Technologies**: HTML5, CSS3, JavaScript ES6
+
+A basic two-player Tic Tac Toe game. Only human vs human mode is functional. No computer AI or factory functions are implemented yet.
+
+**Key Features**:
+- Human vs Human gameplay only
+- Dialog boxes for game start and game over
+- Simple modular structure, but not fully decoupled
+- No AI or minimax logic
+
+---
+
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup and modern web standards
@@ -153,6 +169,7 @@ To explore any project locally:
 | Form | HTML5, CSS3, Custom Fonts | Form validation, typography |
 | Landing Page | HTML5, CSS3 | Flexbox layouts, responsive images |
 | Dashboard | HTML5, CSS3, SVG | CSS Grid, complex layouts |
+| Tic Tac Toe | HTML5, CSS3, JS | Human vs Human gameplay, dialog boxes |
 
 ---
 
