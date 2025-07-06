@@ -12,9 +12,9 @@
     <dialog id="dialog" closedby="any">
         <form method="dialog">
             <h2>Welcome Tic Tac Toe</h2>
-            <input type="checkbox" id="Human" name="Human" checked>
+            <input type="radio" id="Human" name="player" value="Human" checked>
             <label for="Human">Play with Human</label>
-            <input type="checkbox" id="Computer" name="Computer">
+            <input type="radio" id="Computer" name="player" value="Computer">
             <label for="Computer">Play with Computer</label>
             <button type="submit" class="start-game">Start Game</button>
         </form>
@@ -35,5 +35,6 @@
             <div class="cell-bottom-right" data-index="9"></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
