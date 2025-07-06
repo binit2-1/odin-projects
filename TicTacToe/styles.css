@@ -139,3 +139,37 @@ dialog::backdrop {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(238, 90, 82, 0.4);
 }
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.game-over h2 {
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.restart-game {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 10px;
+}
+
+.restart-game:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(238, 90, 82, 0.4);
+}

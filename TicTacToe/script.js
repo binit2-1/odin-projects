@@ -59,15 +59,21 @@ document.addEventListener('DOMContentLoaded', () => {
         HandleClicks();
 
         function checkWinner() {
+            let winner=' ';
             for (let i of winningCombinations) {
                 if (board[i[0]] === '' || board[i[1]] === '' || board[i[2]] === '') {
                     continue; 
                 } else if (board[i[0]] === board[i[1]] && board[i[1]] === board[i[2]]) {
                     console.log(`Winner: ${board[i[0]]}`);
+                    winner = (board[i[0]] == 'X') ? 'YOU win' : 'OPPONENT wins';
+                    const gameOverMessage = document.getElementById('game-over-message');
+                    gameOverMessage.textContent = ` ${winner} `;
+                    document.getElementById('game-over-dialog').showModal();
                     return true;
                 }
             }
             return false;
         }
+
     }
 });
