@@ -10,12 +10,16 @@
 </head>
 <body>
     <dialog id="dialog" closedby="any">
-        <form method="dialog">
-            <h2>Welcome Tic Tac Toe</h2>
-            <input type="radio" id="Human" name="player" value="Human" checked>
-            <label for="Human">Play with Human</label>
-            <input type="radio" id="Computer" name="player" value="Computer">
-            <label for="Computer">Play with Computer</label>
+        <form method="dialog" class="start-choice">
+            <h2>Welcome to Tic Tac Toe</h2>
+            <div class="radio-group">
+                <input type="radio" id="Human" name="player" value="Human" checked>
+                <label for="Human">VS Human</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="Computer" name="player" value="Computer">
+                <label for="Computer">VS Computer</label>
+            </div>
             <button type="submit" class="start-game">Start Game</button>
         </form>
     </dialog>
